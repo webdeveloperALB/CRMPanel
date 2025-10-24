@@ -1612,15 +1612,15 @@ export default function UnifiedAdminPanel() {
                       {selectedUser.full_name || selectedUser.email}
                     </p>
                     <div className="flex items-center space-x-2">
-                      <p className="text-sm text-green-600">
+                      <p className="text-md text-green-600">
                         {selectedUser.client_id} • {selectedUser.email}
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-md text-gray-500">
                         🏦 Bank: {selectedUser.bank_origin}
                       </p>
 
                       {selectedUser.password && (
-                        <p className="text-xs text-gray-500">
+                        <p className="text-md text-gray-500">
                           🔑 Password: {selectedUser.password}
                         </p>
                       )}
