@@ -781,13 +781,6 @@ export default function SecureAdminPage() {
   if (isAuthenticated) {
     return (
       <div>
-        <div className="bg-gray-100 text-black p-4 flex justify-between items-center">
-          <div className="flex flex-row items-center justify-between text-black space-x-6">
-            <h1 className="text-2xl font-bold pr-14">CRM Panel</h1>
-          </div>
-
-          <div className="flex items-center space-x-2"></div>
-        </div>
         <AdminDashboard
           sessionTimeLeft={sessionTimeLeft}
           sessionId={securityState.sessionId}
