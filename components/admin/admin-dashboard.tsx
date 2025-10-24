@@ -1039,8 +1039,8 @@ export default function EnhancedAdminDashboard({
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div>
-                <div className="flex items-center space-x-6 text-sm text-gray-600">
-                  <span>Your Session: {sessionId.slice(0, 8)}...</span>
+                <div className="flex items-center space-x-4 text-md text-black">
+                  <span className="text-black">Your Session: {sessionId.slice(0, 8)}...</span>
                   <div
                     className={`flex items-center ${getSessionStatusColor()}`}
                   >

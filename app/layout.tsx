@@ -5,9 +5,9 @@ import "./globals.css";
 import LayoutDebugger from "@/components/dev/layout-debugger"; // Optional client-only logger
 
 export const metadata: Metadata = {
-  title: "Digital Chain Bank",
-  description: "Digital Chain Bank",
-  generator: "Digital Chain Bank",
+  title: "CRMPanel",
+  description: "CRMPanel",
+  generator: "CRMPanel",
 };
 
 export default function RootLayout({
