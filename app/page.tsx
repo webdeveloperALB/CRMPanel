@@ -783,13 +783,10 @@ export default function SecureAdminPage() {
       <div>
         <div className="bg-gray-100 text-black p-4 flex justify-between items-center">
           <div className="flex flex-row items-center justify-between text-black space-x-6">
-            <h1 className="text-2xl font-bold pr-14">
-              CRM Panel
-            </h1>
+            <h1 className="text-2xl font-bold pr-14">CRM Panel</h1>
           </div>
 
-          <div className="flex items-center space-x-2">
-          </div>
+          <div className="flex items-center space-x-2"></div>
         </div>
         <AdminDashboard
           sessionTimeLeft={sessionTimeLeft}
@@ -808,11 +805,6 @@ export default function SecureAdminPage() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-12 h-12 bg-[#F26623] rounded-lg flex items-center justify-center">
-              <Shield className="w-8 h-8 text-white" />
-            </div>
-          </div>
           <CardTitle className="text-2xl">CRM Panel</CardTitle>
           {/* Security Status Indicators */}
           <div className="flex justify-center space-x-2 mt-4">
@@ -900,21 +892,6 @@ export default function SecureAdminPage() {
               <p className="text-red-600 text-sm">{error}</p>
             </div>
           )}
-
-          {/* Security Information */}
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
-            <h4 className="font-medium text-blue-800 mb-2">Authentication:</h4>
-            <div className="text-sm text-blue-700 space-y-1">
-              <p>• Database-backed user authentication</p>
-              <p>• Multi-admin session support with cross-tab sync</p>
-              <p>• Account lockout after failed attempts</p>
-              <p>• Session timeout and inactivity detection</p>
-              <p>• Rate limiting and attempt logging</p>
-              <p>• Real IP address tracking and geolocation</p>
-              <p>• Session persistence across browser tabs</p>
-              <p>• Use any email/password from the users table</p>
-            </div>
-          </div>
 
           {/* Active Sessions Display */}
           {activeSessions.length > 0 && (
